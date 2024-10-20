@@ -1,0 +1,63 @@
+<div>POST to https://jsonplaceholder.typicode.com/users</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;name&quot;: &quot;Alice&quot;,
+    &quot;username&quot;: &quot;alice123&quot;,
+    &quot;email&quot;: &quot;alice@example.com&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;123 Main St&quot;,
+        &quot;suite&quot;: &quot;Apt 2&quot;,
+        &quot;city&quot;: &quot;New City&quot;,
+        &quot;zipcode&quot;: &quot;54321&quot;,
+        &quot;geo&quot;: {
+            &quot;lat&quot;: &quot;12.3456&quot;,
+            &quot;lng&quot;: &quot;98.7654&quot;
+        }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+        &quot;name&quot;: &quot;Hoeger LLC&quot;,
+        &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+        &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://jsonplaceholder.typicode.com/users&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;name&quot;: &quot;Alice&quot;,
+    &quot;username&quot;: &quot;alice123&quot;,
+    &quot;email&quot;: &quot;alice@example.com&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;123 Main St&quot;,
+        &quot;suite&quot;: &quot;Apt 2&quot;,
+        &quot;city&quot;: &quot;New City&quot;,
+        &quot;zipcode&quot;: &quot;54321&quot;,
+        &quot;geo&quot;: {
+            &quot;lat&quot;: &quot;12.3456&quot;,
+            &quot;lng&quot;: &quot;98.7654&quot;
+        }
+    },
+    &quot;phone&quot;: &quot;024-648-3804&quot;,
+    &quot;website&quot;: &quot;ambrose.net&quot;,
+    &quot;company&quot;: {
+        &quot;name&quot;: &quot;Hoeger LLC&quot;,
+        &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;,
+        &quot;bs&quot;: &quot;target end-to-end models&quot;
+    }
+}&#39;
+</div>
